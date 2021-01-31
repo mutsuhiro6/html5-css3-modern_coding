@@ -42,11 +42,12 @@ a:link, a:visited, a:hover, a:active {
 
 .main {
     display: block;
+    float: left;
     width: 660px;
     /* background-color: blue; */
 }
 
-.sidebar {
+.sidemenu {
     float: right;
     width: 275px;
         /* background-color: red; */
@@ -54,6 +55,9 @@ a:link, a:visited, a:hover, a:active {
 
 .footer {
     width: 100%;
+    padding: 20px 0 30px;
+    background: #2d3d54 url('../images/bg-footer.gif');
+    color: #ffffff;
     /* background-color: chartreuse; */
 }
 
@@ -248,4 +252,158 @@ a:link, a:visited, a:hover, a:active {
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size: 1.2rem;
+}
+
+/* ARTICLE */
+.article-box {
+    display: block;
+    width: 315px;
+    height: 360px;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 210px 15px 0;
+    box-shadow: 6px 6px 8px -4px rgba(0,0,0,0.15);
+    transition: opacity 0.15s;
+}
+.article-box:hover {
+    opacity: 0.8;
+}
+.article-box:nth-of-type(odd) {
+    float: left;
+}
+.article-box:nth-of-type(even) {
+    float: right;
+}
+.article-box .title {
+    margin-top: 30px;
+    color: #555555;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+.article-box .desc {
+    margin-top: 5px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.article-box .date {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    display: block;
+    width: 160px;
+    padding: 4px;
+    background-color: #b5d264;
+    color: #2d3d54;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.article-box .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.horizontal-list {
+    width: 970px;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 0;
+}
+.horizontal-list .horizontal-item {
+    display: inline-block;
+    padding: 0 15px;
+    letter-spacing: 1px;
+}
+.horizontal-list .horizontal-item + .horizontal-item {
+    border-left: 1px solid #bbbbbb;
+}
+.horizontal-list .horizontal-item a {
+    border-bottom: 1px dashed #777777;
+    color: #bbbbbb;
+    font-size: 1.1rem;
+    transition: color 0.15s;
+}
+.horizontal-list .horizontal-item a:hover {
+    color: #ddd;
+}
+
+.copyright {
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* RANKING */
+.ranking {
+    margin-bottom: 30px;
+    list-style-type: none;
+    counter-reset: ranking;
+}
+.ranking .ranking-item {
+    /* font-size: 1.0rem; */
+    margin-top: 15px;
+    
+}
+.ranking .ranking-item a {
+    display: block;
+    font-size: 0;
+    transition: opacity 0.15s;
+}
+.ranking .ranking-item a:hover {
+    opacity: 0.8;
+}
+.ranking .image {
+    width: 55px;
+    height: 55px;
+}
+.ranking .text {
+    display: inline-block;
+    width: 182px;
+    color: #000000;
+    font-size: 1.2rem;
+    vertical-align: top;
+    line-height: 1.5;
+}
+.ranking .order {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    color: #aaa;
+    vertical-align: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 16px;
+    transform: rotate(45deg);
+}
+
+.ranking .ranking-item:nth-of-type(1) .order,
+.ranking .ranking-item:nth-of-type(2) .order,
+.ranking .ranking-item:nth-of-type(3) .order {
+    border: none;
+    color: #ffffff;
+    font-weight: normal;
+    line-height: 18px;
+}
+.ranking .ranking-item:nth-of-type(1) .order {
+    background-color: #dab413;
+}
+.ranking .ranking-item:nth-of-type(2) .order {
+    background-color: #6e7b84;
+}
+.ranking .ranking-item:nth-of-type(3) .order {
+    background-color: #a0541a;
+}
+
+.ranking .order::before {
+    content: counter(ranking);
+    counter-increment: ranking;
+    display: inline-block;
+    font-size: 1.0rem;
+    transform: rotate(-45deg);
 }

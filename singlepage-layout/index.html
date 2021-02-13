@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Single Page Layout</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_header.css">
+    <link rel="stylesheet" href="./css/style_about.css">
+    <link rel="stylesheet" href="./css/style_works.css">
+</head>
+
+<body>
+    <header class="header">
+        <p class="site-title-sub">Web designer's portfolio</p>
+        <h1 class="site-title">HI, MY NAME IS...</h1>
+        <p class="site-description">Check out some of my works.</p>
+        <div class="buttons">
+            <a class="button" href="#about">LEARN MORE</a>
+            <a class="button button-showy" href="#contact">SEND MESSAGE</a>
+        </div>
+    </header>
+    <section class="about" id="about">
+        <h2 class="heading">ABOUT ME</h2>
+        <p class="about-text">
+            どうも初めまして、Y!J. Porkです。<br>
+            世界中の人に高値で無価値なキューブを売りつける仕事をしていましたが、
+            現在はfreelanceのWeb designerとして働いています。
+        </p>
+        <p class="about-text">
+            このサイトは、書籍「HTML/CSS モダンコーディング」のサンプルとして作られた
+            架空のWeb designerのポートフォリオサイトです。<br>
+            このようなSingle Page Layoutのページをつくルことができる
+            実践的なコーディングノウハウを学ぶことができます。
+        </p>
+    </section>
+    <section class="works">
+        <h2 class="heading">WORKS</h2>
+        <div class="works-wrapper">
+            <div class="work-box tree">
+                <img class="work-image" src="./images/tree.jpg" alt="Work 1">
+                <div class="work-description">
+                    <div class="work-description-inner">
+                        <p class="work-text">
+                            First work. <br>
+                            簡単な説明が入ります。<br>
+                            使用ツール:HTML,CSS,JavaScript <br>
+                            <a href="#" class="button button-ghost">READ MORE</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="work-box building">
+                <img class="work-image" src="./images/building.jpg" alt="Work 2">
+                <div class="work-description">
+                    <div class="work-description-inner">
+                        <p class="work-text">
+                            Second work. <br>
+                            簡単な説明が入ります。<br>
+                            使用ツール:Java, Spring FrameWork <br>
+                            <a href="#" class="button button-ghost">READ MORE</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="work-box lake">
+                <img class="work-image" src="./images/lake.jpg" alt="Work 3">
+                <div class="work-description">
+                    <div class="work-description-inner">
+                        <p class="work-text">
+                            Third work. <br>
+                            簡単な説明が入ります。<br>
+                            使用ツール:Scala, Apache Spark <br>
+                            <a href="#" class="button button-ghost">READ MORE</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="work-box sky">
+                <img class="work-image" src="./images/sky.jpg" alt="Work 4">
+                <div class="work-description">
+                    <div class="work-description-inner">
+                        <p class="work-text">
+                            Forth work. <br>
+                            簡単な説明が入ります。<br>
+                            使用ツール:Scala, PlayFramework, PostgreSQL<br>
+                            <a href="#" class="button button-ghost">READ MORE</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills">
+
+    </section>
+    <section class="contact" id="contact">
+
+    </section>
+    <footer class="footer">
+
+    </footer>
+</body>
+
+</html>

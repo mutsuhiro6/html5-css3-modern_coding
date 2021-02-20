@@ -44,3 +44,11 @@
 .contact-form textarea:focus {
     box-shadow: 0 0 8px rgba(141, 119, 202, 0.2) inset;
 }
+@media (max-width: 768px) {
+    .contact-form {
+        width: 80%;
+    }
+    .contact {
+        padding-bottom: 80px;
+    }
+}

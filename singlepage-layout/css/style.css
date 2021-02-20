@@ -17,6 +17,13 @@ body {
     font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; 
 }
 
+@media (max-width: 1024px) {
+    body {
+        background-image: none;
+    }
+}
+
+
 /* h2 section title */
 .heading {
     display: inline-block;
@@ -37,4 +44,13 @@ body {
 }
 .heading::before {
     bottom: 5px;
+}
+
+@media(max-media: 768px) {
+    .heading {
+        font-size: 2.5rem;
+    }
+    .body {
+        font-size: 1.3rem;
+    }
 }

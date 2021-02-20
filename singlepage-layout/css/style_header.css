@@ -52,3 +52,30 @@
 .buttons .button {
     margin: 10px;
 }
+
+@media (max-width: 768px) {
+    .site-title-sub::before,
+    .site-title-sub::after {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+    .site-title-sub {
+        font-size: 1.7rem;
+    }
+    .site-title {
+        margin-top: 35px;
+        font-size: 5rem;
+    }
+    .header {
+        padding-top: 60px;
+    }
+    /* 
+    :hoverのプロパティを変更したりしていると、
+    １タップでhoverアクション、もう１タップしてやっと
+    リンク遷移といった挙動になる可能性ある（iOS 8以前w）
+    */
+    .button:hover {
+        opacity: 1;
+    }
+}
